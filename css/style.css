@@ -1,0 +1,49 @@
+.head {
+color:#ffffff;
+font-family:sans-serif;
+font-weight:bold;
+}
+body{
+background: #35414a;
+}	
+.gpa {
+color:#ffffff;
+font-family:sans-serif;
+font-weight:bold;
+margin:3px 25px 3px 0px;
+}
+.s {
+color:#ffffff;
+font-family:sans-serif;
+}
+.a {
+background-color:rgba(10,5,5,0.5);
+color:#ffffff;
+font-family:sans-serif;
+font-weight:bold;
+margin:10px;
+padding:8px;
+border-radius:7px;
+}	
+.button{
+background-color:rgb(10,15,15);
+border-radius:7px;
+color:#ffffff;
+font-weight:bold;
+padding-left:10px;
+padding-right:10px;
+padding-top:4px;
+padding-bottom:4px; 
+border:none;
+}
+#cgpa{
+color:#000000;
+}
+#gpa{
+color:#000000;
+}	
+.b{
+	color:#000000;
+}	
+
+

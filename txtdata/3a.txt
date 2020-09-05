@@ -1,0 +1,9 @@
+<span style="color:white; font-family:sans-serif">Semester 1:</span>
+<input type="text" name="sem1" size="4">	
+<br><br>
+<span style="color:white; font-family:sans-serif">Semester 2:</span>
+<input type="text" name="sem2" size="4">	
+<br><br>
+<span style="color:white; font-family:sans-serif">Semester 3:</span>
+<input type="text" name="sem3" size="4">	
+<br>
