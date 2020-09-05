@@ -1,1 +1,1 @@
-# cgpacalculator.github.io
+# Krishnakrish77.github.io
