@@ -1,3 +1,0 @@
-<span style="color:white; font-family:sans-serif">Semester 1:</span>
-<input type="text" name="sem1" size="4">	
-<br>
