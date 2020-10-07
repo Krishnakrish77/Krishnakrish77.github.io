@@ -3,16 +3,12 @@
   <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
   <!-- we import arjs version without NFT but with marker + location based support -->
   <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+  <script src="https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
   <body style="margin : 0px; overflow: hidden;">
-    <a-scene embedded arjs>
-     <a-marker preset='hiro'>
-        <!--<a-entity
-          position="0 0 0"
-          scale="0.0005 0.0005 0.0005"
-          gltf-model="taj.gltf"
-        ></a-entity>-->
-        <a box position='0 1 0' material='color: blue;'>
-        </a-box>
+    <a-scene embedded arjs='trackingMethod: best;'>
+     <a-marker preset="hiro">
+      <a-box position='0 1 0' material='color: blue;'>
+      </a-box>
       </a-marker>
       <a-entity camera></a-entity>
     </a-scene>
