@@ -8,7 +8,7 @@ AFRAME.registerComponent('markerhandler', {
         animatedMarker.addEventListener('click', function(ev, target){
             const intersectedElement = ev && ev.detail && ev.detail.intersectedEl;
             if (aEntity && intersectedElement === aEntity) {
-                window.open("https://www.w3schools.com");
+                window.location.href="https://www.w3schools.com";
             }
         });
 }});
