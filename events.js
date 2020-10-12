@@ -1,25 +1,22 @@
-var clicks = false;
-function flag(){
-    document.querySelector("#animated-marker").addEventListener('markerFound', (evt) => {
-                clicks = true
-            })
-    document.querySelector("#animated-marker").addEventListener('markerLost', (evt) => {
-                clicks = false
-            }) 
-};
-
 AFRAME.registerComponent('markerhandler', {
 
     init: function() {
+        var clicks = false;
         const animatedMarker = document.querySelector("#animated-marker");
         const aEntity = document.querySelector("#WebPress");
-        var fl=flag();
-        // every click, we make our model grow in size :)
+        document.querySelector("#animated-marker").addEventListener('markerFound', (evt) => {
+                clicks = true
+            })
+        document.querySelector("#animated-marker").addEventListener('markerLost', (evt) => {
+                clicks = false
+            }) 
+        
         animatedMarker.addEventListener('click', function(ev, target){
             const intersectedElement = ev && ev.detail && ev.detail.intersectedEl;
             if (aEntity && intersectedElement === aEntity) {
-                if(fl)
+                if(clicks) {
                     window.open("https://voiceofsk.blogspot.com/");
+                }
             }
         });
 }});
