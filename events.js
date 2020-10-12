@@ -1,9 +1,9 @@
 var clicks = false;
 function flag(){
-    document.querySelector("#scene").addEventListener('markerFound', (evt) => {
+    document.querySelector("#animated-marker").addEventListener('markerFound', (evt) => {
                 clicks = true
             })
-    document.querySelector("#scene").addEventListener('markerLost', (evt) => {
+    document.querySelector("#animated-marker").addEventListener('markerLost', (evt) => {
                 clicks = false
             }) 
 };
