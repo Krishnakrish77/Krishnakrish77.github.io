@@ -19,7 +19,7 @@ AFRAME.registerComponent('markerhandler', {
         animatedMarker.addEventListener('click', function(ev, target){
             const intersectedElement = ev && ev.detail && ev.detail.intersectedEl;
             if (aEntity && intersectedElement === aEntity) {
-                console.log(clicks);
+                console.log("Site:"+clicks);
                 if(clicks) {
                     window.open("https://voiceofsk.blogspot.com/");
                 }
@@ -43,7 +43,7 @@ AFRAME.registerComponent('clickhandler', {
         animatedMarker.addEventListener('click', function(ev, target){
             const intersectedElement = ev && ev.detail && ev.detail.intersectedEl;
             if (aEntity && intersectedElement === aEntity) {
-                console.log(lclicks);
+                console.log("Ln:"+lclicks);
                 if(lclicks) {
                     window.open("https://www.linkedin.com/in/sarukrishna-a-119a5681/");
                 }
@@ -67,7 +67,7 @@ AFRAME.registerComponent('mailhandler', {
         animatedMarker.addEventListener('click', function(ev, target){
             const intersectedElement = ev && ev.detail && ev.detail.intersectedEl;
             if (aEntity && intersectedElement === aEntity) {
-                console.log(mclicks);
+                console.log("Mail:"+mclicks);
                 if(mclicks) {
                     window.open("mailto:a.sarukrishna@gmail.com");
                 }
@@ -91,7 +91,7 @@ AFRAME.registerComponent('phhandler', {
         animatedMarker.addEventListener('click', function(ev, target){
             const intersectedElement = ev && ev.detail && ev.detail.intersectedEl;
             if (aEntity && intersectedElement === aEntity) {
-                console.log(tclicks);
+                console.log("Tel:"+tclicks);
                 if(tclicks) {
                     window.open("tel:8903587247");
                 }
@@ -115,7 +115,7 @@ AFRAME.registerComponent('pichandler', {
         animatedMarker.addEventListener('click', function(ev, target){
             const intersectedElement = ev && ev.detail && ev.detail.intersectedEl;
             if (aEntity && intersectedElement === aEntity) {
-                console.log(pclicks);
+                console.log("Pic:"+pclicks);
                 if(pclicks) {
                     window.open("https://drive.google.com/file/d/1I6JGCXRRGq6RlCwDjdNPDFHJIYOlK_L6/view?usp=sharing");
                 }
