@@ -1,12 +1,7 @@
-var clicks = false;
-var lclicks = false;
-var mclicks = false;
-var tclicks = false;
-var pclicks = false;
-
 AFRAME.registerComponent('markerhandler', {
 
     init: function() {
+        var clicks = false;
         const animatedMarker = document.querySelector("#animated-marker");
         const aEntity = document.querySelector("#WebPress");
         document.querySelector("#animated-marker").addEventListener('markerFound', (evt) => {
@@ -31,6 +26,7 @@ AFRAME.registerComponent('markerhandler', {
 AFRAME.registerComponent('clickhandler', {
 
     init: function() {
+        var lclicks = false;
         const animatedMarker = document.querySelector("#in-marker");
         const aEntity = document.querySelector("#LinkedInPress");
         document.querySelector("#in-marker").addEventListener('markerFound', (evt) => {
@@ -55,6 +51,7 @@ AFRAME.registerComponent('clickhandler', {
 AFRAME.registerComponent('mailhandler', {
 
     init: function() {
+        var mclicks = false;
         const animatedMarker = document.querySelector("#mail-marker");
         const aEntity = document.querySelector("#MailPress");
         document.querySelector("#mail-marker").addEventListener('markerFound', (evt) => {
@@ -79,6 +76,7 @@ AFRAME.registerComponent('mailhandler', {
 AFRAME.registerComponent('phhandler', {
 
     init: function() {
+        var tclicks = false;
         const animatedMarker = document.querySelector("#ph-marker");
         const aEntity = document.querySelector("#PhonePress");
         document.querySelector("#ph-marker").addEventListener('markerFound', (evt) => {
@@ -103,6 +101,7 @@ AFRAME.registerComponent('phhandler', {
 AFRAME.registerComponent('pichandler', {
 
     init: function() {
+        var pclicks = false;
         const animatedMarker = document.querySelector("#pic-marker");
         const aEntity = document.querySelector("#PhotoPress");
         document.querySelector("#pic-marker").addEventListener('markerFound', (evt) => {
