@@ -16,7 +16,7 @@ AFRAME.registerComponent('markerhandler', {
             if (aEntity && intersectedElement === aEntity) {
                 console.log("Site:"+clicks);
                 if(clicks) {
-                    window.open("https://voiceofsk.blogspot.com/");
+                    window.location.href="https://voiceofsk.blogspot.com/";
                 }
             }
         });
@@ -41,7 +41,7 @@ AFRAME.registerComponent('clickhandler', {
             if (aEntity && intersectedElement === aEntity) {
                 console.log("Ln:"+lclicks);
                 if(lclicks) {
-                    window.open("https://www.linkedin.com/in/sarukrishna-a-119a5681/");
+                    window.location.href="https://www.linkedin.com/in/sarukrishna-a-119a5681/";
                 }
             }
         });
@@ -116,7 +116,7 @@ AFRAME.registerComponent('pichandler', {
             if (aEntity && intersectedElement === aEntity) {
                 console.log("Pic:"+pclicks);
                 if(pclicks) {
-                    window.open("https://drive.google.com/file/d/1I6JGCXRRGq6RlCwDjdNPDFHJIYOlK_L6/view?usp=sharing");
+                    window.location.href="https://drive.google.com/file/d/1I6JGCXRRGq6RlCwDjdNPDFHJIYOlK_L6/view?usp=sharing";
                 }
             }
         });
