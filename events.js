@@ -66,7 +66,7 @@ AFRAME.registerComponent('mailhandler', {
             if (aEntity && intersectedElement === aEntity) {
                 console.log("Mail:"+mclicks);
                 if(mclicks) {
-                    window.location.href="mailto:a.sarukrishna@gmail.com";
+                    window.open("mailto:a.sarukrishna@gmail.com");
                 }
             }
         });
@@ -91,7 +91,7 @@ AFRAME.registerComponent('phhandler', {
             if (aEntity && intersectedElement === aEntity) {
                 console.log("Tel:"+tclicks);
                 if(tclicks) {
-                    window.location.href="tel:8903587247";
+                    window.open("tel:8903587247");
                 }
             }
         });
